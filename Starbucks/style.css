@@ -6,6 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 
 section{
     position: relative;
@@ -37,7 +43,6 @@ header .logo{
 header ul{
     position: relative;
     display: flex;
-    list-style: none;
 }
 
 header ul li a{
@@ -45,5 +50,51 @@ header ul li a{
     font-weight: 400;
     color: #333;
     margin-left: 40px;
-    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    width: 100%;
+}
+.content .textbox h2{
+    color: #333;
+    font-weight: 500;
+    font-size: 4em;
+    line-height: 1.4em;
+}
+.content .textbox h2 span{
+    color: #017143;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.content .textbox p{
+    color: #333;
+}
+.content .textbox a{
+    color: #fff;
+    background: #017143;
+    border-radius: 40px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.content .imagebox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imagebox img{
+    max-width: 340px;
 }
