@@ -86,7 +86,7 @@ header ul li a{
     display: inline-block;
     padding: 8px 20px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .content .imagebox{
@@ -106,7 +106,6 @@ header ul li a{
     bottom: 20px;
     transform: translateX(-50%);
     display: flex;
-    transition: 10s;
 }
 .thumb li{
     display: inline-block;
@@ -124,7 +123,7 @@ header ul li a{
 .social{
     position: absolute;
     top: 50%;
-    right: -70px;
+    right: 0px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
