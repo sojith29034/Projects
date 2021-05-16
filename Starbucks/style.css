@@ -16,8 +16,9 @@ li{
 section{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 100px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
