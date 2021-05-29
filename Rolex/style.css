@@ -43,7 +43,7 @@ section{
 .content .intro{
     display: inline-block;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left:70%;
     transform: translate(-50%,-50%);
 }
@@ -54,7 +54,6 @@ section{
 }
 .content .thumbs li{
     cursor: pointer;
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,18 +61,17 @@ section{
     width: 140px;
     background: linear-gradient(135deg, rgb(59, 59, 59) 0%, rgb(139, 139, 139)100%);
     box-shadow: inset 3px 3px 5px rgb(19, 19, 19), inset -3px -3px 5px rgb(151, 151, 151);
-    margin: auto 10px;
+    margin: 4rem 1rem;
     border-radius: 20px;
     transition: .5s;
 }
 .content .thumbs li:hover{
     transform: scale(1.1);
-    margin: auto 30px;
+    margin: auto 2rem;
     filter: drop-shadow(0px 10px 5px);
 }
 .content .thumbs img{
     cursor: pointer;
-    display: inline-block;
     max-height: 100px;
 }
 .bg-circle{
@@ -88,22 +86,42 @@ section{
 }
 
 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     user-select: none;
     color: #A37E2C;
     font-size: 8em;
     font-weight: 700;
-    margin: 60px 70px;
     letter-spacing: 8px;
 }
 
 p{
-    position: absolute;
-    top: 40%;
-    left: 54.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
     color: #f5f5f5;
-    font-size: 40px;
+    font-size: 2.5em;
     text-transform: uppercase;
     font-family: 'Didact Gothic', sans-serif;
     letter-spacing: 5px;
 }
+
+/*
+main section{
+    height: 100vh;
+    background: #A37E2C;
+    animation: bg 3s 1;
+    clip-path: circle(900px at 50% 50%);
+}
+
+@keyframes bg {
+    from{
+        clip-path: circle(00px at 0% 0%);
+    }
+    to{
+        clip-path: circle(900px at 50% 50%);
+    }
+} */
