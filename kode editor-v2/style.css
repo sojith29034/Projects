@@ -68,7 +68,7 @@ textarea{
     height: 100%;
     padding: 7px 10px;
 }
-iframe#output{
+#output{
     height: 100%;
     width: 100%;
 }
