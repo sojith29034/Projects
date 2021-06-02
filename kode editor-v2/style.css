@@ -69,6 +69,7 @@ textarea{
     padding: 7px 10px;
 }
 #output{
+    border: 2px solid rgb(99, 99, 99);
     height: 100%;
     width: 100%;
 }
