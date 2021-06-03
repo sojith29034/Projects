@@ -155,7 +155,7 @@ label #cancel{
 
 
 
-@media only screen and (max-width: 840px) , (orientation: landscape) {
+@media only screen and (max-width: 840px) , (orientation: landscape) and (max-width: 1040px) {
     .laptopHide{
         display: block;
     }
