@@ -114,7 +114,7 @@ label #btn{
     top: 2.5vh;
     right: 20px;
     color: black;
-    font-size: 4vh;
+    font-size: 1rem;
     transition: all .5s;
 }
 label #cancel{
