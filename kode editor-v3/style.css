@@ -78,9 +78,9 @@ textarea{
 
 
 
-/* .laptopHide{
+.laptopHide{
     display: none;
-} */
+}
 
 
 .sidebar {
@@ -147,7 +147,7 @@ label #cancel{
     padding: 10px 10px;
 }
 #preview{
-    background: rgb(207, 207, 207);
+    background: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
     height: 100%;
     width: 100%;
