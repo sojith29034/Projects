@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@700&family=Otomanopee+One&display=swap');
+
+
+:root{
+    --nav-items: 'Khula', sans-serif;
+    --bg-color: rgb(0, 0, 0);
+    --sec-bg-color: rgb(102, 102, 211);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    /*background-image: radial-gradient(#fff 6px, transparent 6px);
+    background-size: 100px 100px;*/
+}
+
+.left-box{
+    position: absolute;
+    height: 75vh;
+    width: 20%;
+    z-index: 8;
+    background-color: var(--sec-bg-color);
+    border-radius: 0 0 25px 0;
+}
+/*.right-box{
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    height: 50vh;
+    width: 35%;
+    z-index: 8;
+    background-color: var(--sec-bg-color);
+    border-radius: 25px 0 0 0;
+}*/
+
+/*------------------------------- Navigation Menu -------------------------------*/
+nav{
+    position: fixed;
+    z-index: 10;
+    /* background-color: var(--sec-bg-color); */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+}
+nav .logo{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin: 0 5%;
+    display: grid;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
+}
+nav .logo h1{
+    font-size: 25px;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--sec-bg-color);
+    border-radius: 0 0 0 15px;
+}
+nav ul a{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--nav-items);
+    padding: 0;
+    transition: .5s ease-in-out;
+    padding: 4px 8px;
+}
+nav ul a:hover{
+    text-shadow: 2px 2px 2px black;
+    box-shadow: inset 2px 2px 5px rgba(39, 39, 39, 0.75), inset -2px -2px 5px rgba(241, 241, 241, 0.5);
+    border-radius: 5px;
+}
+
+#nav{
+    position: absolute;
+    top: -60px;
+}
+input{
+    display: none;
+}
+nav .icon{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+nav .icon .bar{
+    width: 30px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box{
+        display: none;
+    }
+    nav .logo{
+        width: 100%;
+        margin: 0;
+        background: var(--sec-bg-color);
+    }
+    nav .logo h1{
+        padding: 0 5%;
+    }
+    nav ul{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        top: 60px;
+        bottom: 100%;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0;
+        transition: .5s;
+    }
+    .mobile{
+        display: none;
+    }
+    nav .icon{
+        display: block;
+    }
+    nav :checked ~ ul{
+        bottom: 0;
+    }
+    nav :checked ~ .icon .bar:nth-child(1) {
+        transform: translateY(8px) rotate(135deg);
+    }
+    nav :checked ~ .icon .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-135deg);
+    }
+    nav :checked ~ .icon .bar:nth-child(2) {
+        opacity: 0;
+    }
+}
